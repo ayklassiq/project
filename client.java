@@ -15,7 +15,7 @@ public class client{
     
     public static void main(String args[])throws Exception {
  
-         Socket s = new Socket("nll","localhost",8080);
+         Socket s = new Socket("localhost",8080);
          DataOutputStream dout = new DataOutputStream(s.getOutputStream());
          DataInputStream din= new DataInputStream(s.getInputStream());
          BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
